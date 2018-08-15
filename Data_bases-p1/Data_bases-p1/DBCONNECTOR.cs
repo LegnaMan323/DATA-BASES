@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace Data_bases_p1
 {
-    class DBConnection
+    public class DBConnection
     {
         private string serverIP = string.Empty;
         private string username = string.Empty;

@@ -46,7 +46,7 @@ namespace Data_bases_p1
             dataGridView1.Columns.Clear();
             if (ponys)
             {
-                DataTable PONYS = Connect1.SelectQuery("Select * from entrenadores");
+                DataTable PONYS = Connect1.SelectQuery("Select * from PONYS");
                 dataGridView1.DataSource = PONYS;
 
             }

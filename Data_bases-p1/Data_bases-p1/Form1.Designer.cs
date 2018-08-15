@@ -32,12 +32,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_PONYS = new System.Windows.Forms.Button();
             this.btn_ADD = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btn_PONYS = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,8 +87,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btn_PONYS);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.btn_ADD);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -97,17 +97,19 @@
             this.panel1.Size = new System.Drawing.Size(204, 420);
             this.panel1.TabIndex = 1;
             // 
-            // comboBox1
+            // btn_PONYS
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(80, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 2;
+            this.btn_PONYS.Location = new System.Drawing.Point(68, 361);
+            this.btn_PONYS.Name = "btn_PONYS";
+            this.btn_PONYS.Size = new System.Drawing.Size(75, 23);
+            this.btn_PONYS.TabIndex = 3;
+            this.btn_PONYS.Text = "PONYS";
+            this.btn_PONYS.UseVisualStyleBackColor = true;
+            this.btn_PONYS.Click += new System.EventHandler(this.btn_PONYS_Click);
             // 
             // btn_ADD
             // 
-            this.btn_ADD.Location = new System.Drawing.Point(32, 313);
+            this.btn_ADD.Location = new System.Drawing.Point(68, 203);
             this.btn_ADD.Name = "btn_ADD";
             this.btn_ADD.Size = new System.Drawing.Size(75, 23);
             this.btn_ADD.TabIndex = 1;
@@ -143,15 +145,12 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btn_PONYS
+            // textBox1
             // 
-            this.btn_PONYS.Location = new System.Drawing.Point(68, 361);
-            this.btn_PONYS.Name = "btn_PONYS";
-            this.btn_PONYS.Size = new System.Drawing.Size(75, 23);
-            this.btn_PONYS.TabIndex = 3;
-            this.btn_PONYS.Text = "PONYS";
-            this.btn_PONYS.UseVisualStyleBackColor = true;
-            this.btn_PONYS.Click += new System.EventHandler(this.btn_PONYS_Click);
+            this.textBox1.Location = new System.Drawing.Point(90, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(96, 22);
+            this.textBox1.TabIndex = 4;
             // 
             // Form1
             // 
@@ -180,9 +179,9 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button btn_ADD;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btn_PONYS;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
